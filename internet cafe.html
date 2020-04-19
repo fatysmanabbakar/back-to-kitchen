@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/storage/emulated/0/web/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/storage/emulated/0/web/bootstrap/css/bootstrap-theme.css"> 
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    float:right;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #997a00;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color:  #e6b800;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+footer{
+background-color:#000000;
+font-family:serif; 
+color: #997a00;
+ height:280px;
+}
+footer a{
+color:#333333;
+opacity:0.8;
+}
+div .img {
+    width: 900px;
+    height: 900px;
+    background-image: url(/storage/emulated/0/coolpad/screenshots/cafe.jpg);
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 10s; 
+    animation-name: example;
+    animation-duration: 30s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-image: url(/storage/emulated/0/coolpad/screenshots/c1.jpg");width:500px; height: 400px;}
+    25%  {background-image: url(/storage/emulated/0/coolpad/screenshots/c2.jpg");width:500px; height: 400px;}
+    50%  {background-image: url(ai.jpg);width:500px; height: 400px;}
+    100% {background-image: url(addah.jpg);width:500px; height: 400px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-image: url(css.jpg);}
+    25%  {background-image: url(abba.png);}
+    50%  {background-image: url(ai.jpg);}
+    100% {background-image: url(zee.jpg);}
+    }
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)"
+  class="closebtn"
+  onclick="closeNav()">&times;</a>
+
+  <a href="internet cafe.html" >Home</a>
+  <a href="our services.html">Our Services</a>
+  <a href="location.html">Location</a>
+  <a href="#">Contact</a>
+
+</div>
+<div style="position:fixed; background-color: #000000; font-family:serif; color: #997a00;width: 360px; height:80px;">
+<span style=" float:right;font-size:30px;cursor:
+pointer"onclick="openNav()">☰ 
+</span>
+<h2>Fatysman cafe</h2>
+</div>
+<script>
+
+
+function openNav() {
+ document.getElementById("mySidenav")
+ .style.width="250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav")
+ .style.width = "0";
+}
+</script>
+<div class="img">
+<img src="/storage/emulated/0/coolpad/screenshots/cafe.jpg" width="360px" height="320px" style="margin-top:80px;"><br><br>
+</div>
+<h2 align="center" style="color:#997a00; font-family:serif;">Fatysman Internet Cafe</h2>
+<p align="center"style="text-transform:capitalize;">a New internet cafe offering quality services in the heart of kano
+.we offer a very convenient, up-to-date internet and office  works to meet your expectations and beyond
+</p>
+<h3 align="center"style="text-transform:capitalize; color:#997a00; font-family:serif;">Opening and closing hours</h3>
+<ul>
+Open........Close
+<li>Mon 8:00am -  10pm</li>
+<li>Tue 8:00am -  10pm</li>
+<li>Wed 8:00am -  10pm</li>
+<li>Thur 8:00am -  10pm</li>
+<li>Fri 8:00am -  10pm</li>
+<li>Sat 10:00am -  10pm</li>
+<li>Sun 8:00am -  10pm</li>
+
+</ul>
+<div align="center" style="box-shadow;8px 4px 5px 7px #cccccc;">
+<h2 style="text-transform:capitalize; color:#997a00">location</h2>
+<img src="/storage/emulated/0/coolpad/screenshots/map.jpg" width="330px"><br><br>
+</div>
+<div  style="margin-left:10px;">
+<button class="btn btn-warning">Call now</button><br>
+<p>08085204361</p>
+<br><br>
+<b>Address</b><br>
+<button class="btn btn-warning" >Get Address</button> 
+<br>Hotoro,  Tsamiyar boka<br>dogon bene street
+<br>Nassarawa
+<br>Kano
+<br>Nigeria</p>
+</div>
+<footer>
+<nav>
+<a href="about" >About </a><br>
+<a href="" >contact </a><br>
+<a href="" >privacy & </a><br>
+<a href="location.html" >location</a>
+</nav>
+</footer>
+</body>
+</html>

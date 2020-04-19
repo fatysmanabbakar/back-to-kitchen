@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/storage/emulated/0/web/bootstrap/css/bootstrap.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    float:right;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #997a00;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color:  #e6b800;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+footer{
+background-color:#000000;
+font-family:serif; 
+color: #997a00;
+ height:280px;
+}
+footer a{
+color:#cccccc;
+opacity:0.8;
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)"
+  class="closebtn"
+  onclick="closeNav()">&times;</a>
+
+  <a href="internet cafe.html" >Home</a>
+  <a href="our services.html">Our Services</a>
+  <a href="location.html">Location</a>
+  <a href="#">Contact</a>
+
+</div>
+<div style="position:fixed; width:370px; background-color: #000000; font-family:serif; color: #997a00; height:80px;">
+<span style="float:right;font-size:30px;cursor:
+pointer"onclick="openNav()">☰ 
+</span>
+<h2>Fatysman cafe</h2>
+</div>
+<script>
+
+
+function openNav() {
+ document.getElementById("mySidenav")
+ .style.width="250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav")
+ .style.width = "0";
+}
+
+</script>
+<br><br>
+<div style="margin-top:50px;">
+<h2 style="font-family:serif; color: #997a00;" align="center">Our Services</h2>
+<p>we deliver on all internet activities such as:</p>
+<ul style="text-transform:capitalize;">
+<li>school online registration</li>
+<li>job application (local & int.)</li>
+<li>recruitment applications</li>
+<li>report writing/project corrections and proof-reading</li>
+<li>CV writing (appreciable)</li>
+<li>business plans</li>
+<li>business name registration<br>(corporate affairs commission)</li>
+<li>office based activities(binding, document writing,  photocopy and lamination</li>
+<li>graphics design</li>
+<li>remita payment etc.</li>
+</ul>
+<footer>
+<nav>
+<a href="" >About </a><br>
+<a href="" >contact </a><br>
+<a href="" > privacy & policy</a><br>
+<a href="location" >location</a>
+</nav>
+</footer>
+</div>
+</body>
+</html>
